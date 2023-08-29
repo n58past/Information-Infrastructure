@@ -1,3 +1,5 @@
+// Print table
+
 public class one_four {
     public static void main(String[] args){
         System.out.println("a     a^2    a^3");

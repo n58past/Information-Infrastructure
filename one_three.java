@@ -1,3 +1,5 @@
+// Prints word java comprised of the letters J,A,V,A
+
 public class one_three {
     public static void main(String[] args){
         System.out.println("    J    A    V     V    A");
