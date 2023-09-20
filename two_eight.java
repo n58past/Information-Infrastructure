@@ -6,10 +6,13 @@ public class two_eight {
 
         System.out.print("Enter the time zone offset to GMT: ");
         int offset = input.nextInt();
+        
+        // Converts negative offesets to equivalent positive offset
         if (offset < 0){
             offset = offset + 24;
         }
 
+        // GMT time
         long totalMilliseconds = System.currentTimeMillis();
         long totalSeconds = totalMilliseconds / 1000;
         long currentSecond = totalSeconds % 60;
@@ -17,6 +20,8 @@ public class two_eight {
         long currrentMinute = totalMinutes % 60;
         long totalHours = totalMinutes / 60;
         long currentHour = totalHours % 24;
+
+        // Adds offset
         currentHour = (currentHour + offset) % 24;
 
 

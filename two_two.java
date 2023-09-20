@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class two_two {
     public static void main(String[] args){
+        // User input
         Scanner input = new Scanner(System.in);
         final double PI = 3.14159;
 
@@ -9,6 +10,7 @@ public class two_two {
         double radius = input.nextDouble();
         double length = input.nextDouble();
 
+        // Area and volume of cylinder
         double area = radius * radius * PI;
         double volume = area * length;
         
