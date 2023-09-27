@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class list_two_twenty {
+public class two_twenty {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
