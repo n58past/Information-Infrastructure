@@ -15,7 +15,7 @@ public class three_one {
 
         System.out.print("The equation has ");
         if (discrim == 0){
-            double root1 = ((-b) + Math.pow(b * b - 4 * a * c, 0.5))/ (2.0 * a);
+            double root1 = (-b)/ (2.0 * a);
             System.out.print("one root " + Math.round(root1 * 1000000) / 1000000.0);
         }
         else if (discrim > 0){
