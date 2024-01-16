@@ -23,20 +23,23 @@ public class TV {
         volumeLevel = newVolumeLevel;
     }
 
-    public void channelUp() { if (on && channel < 120)
-    channel++;
+    public void channelUp() { 
+        if (on && channel < 120)
+            channel++;
     }
 
-    public void channelDown() { if (on && channel > 1)
-    channel— -;
+    public void channelDown() {
+        if (on && channel > 1)
+            channel--;
     }
 
     public void volumeUp() {
-    if (on && volumeLevel < 7)
-        volumeLevel++;
+        if (on && volumeLevel < 7)
+            volumeLevel++;
     }
 
-    public void volumeDown() { if (on && volumeLevel > 1)
-    volumeLevel— -;
+    public void volumeDown() { 
+        if (on && volumeLevel > 1)
+            volumeLevel--;
     }
 }
