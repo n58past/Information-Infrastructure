@@ -25,28 +25,33 @@ public class eleven_ten {
     }
 }
 
-// Mystack
+// MyStack class 
 class MyStack extends java.util.ArrayList {
     private ArrayList<Object> list = new ArrayList<>();
 
+    // Returns True/False for if list is empty
     public boolean isEmpty() { 
         return list.isEmpty();
     }
 
+    // Returns length of list
     public int getSize() {
         return list.size();
     }
 
+    // Returns top of stack element
     public Object peek() {
         return list.get(0);
     }
 
+    // Returns and removes top of stack element
     public Object pop() {
         Object o = list.get(0); 
         list.remove(0);
         return o;
     }
 
+    // Adds element to top of stack
     public void push(Object o) {
         list.add(0, o);
     }
