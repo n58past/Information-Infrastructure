@@ -25,29 +25,28 @@ public class nine_one {
             + "\nPerimeter: " + rec2.getPerimeter());
 
     }
-}
+    private static class Rectangle{
+        /** The width of this rectangle */ double width = 1;
+        /** The height of this rectangle */ double height = 1;
 
-class Rectangle{
-    /** The width of this rectangle */ double width = 1;
-    /** The height of this rectangle */ double height = 1;
-
-    /** Construct a rectangle */
-    public Rectangle() {
-    }
-        
-    /** Construct a rectangle object */
-    public Rectangle(double newWidth, double newHeight) { 
-        width = newWidth;
-        height = newHeight;
-    }
-        
-    /** Return the area of this rectangle */
-    public double getArea() {
-        return width * height;
-    }
-        
-    /** Return the perimeter of this rectangle */
-    public double getPerimeter() {
-        return 2 * width + 2 * height;
+        /** Construct a rectangle */
+        public Rectangle() {
+        }
+            
+        /** Construct a rectangle object */
+        public Rectangle(double newWidth, double newHeight) { 
+            width = newWidth;
+            height = newHeight;
+        }
+            
+        /** Return the area of this rectangle */
+        public double getArea() {
+            return width * height;
+        }
+            
+        /** Return the perimeter of this rectangle */
+        public double getPerimeter() {
+            return 2 * width + 2 * height;
+        }
     }
 }
