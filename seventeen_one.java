@@ -3,6 +3,7 @@ import java.util.*;
 
 public class seventeen_one {
     public static void main(String[] args) throws IOException { 
+        Random rand = new Random();
         try (
             // Create a file
             PrintWriter output = 
@@ -11,9 +12,9 @@ public class seventeen_one {
             // Write formatted output to the file} 
             for (int i = 0; i < 100; i++){
                 if (i < 99)
-                    output.print((int)(Math.random() * 100000) + " ");
+                    output.print(rand.nextInt(100000) + " ");
                 else
-                    output.print((int)(Math.random() * 100000));
+                    output.print(rand.nextInt(100000));
             } 
         }
         System.out.println("Txt file created");
